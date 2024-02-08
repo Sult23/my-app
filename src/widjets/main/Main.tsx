@@ -27,7 +27,7 @@ const Main = () => {
           <a className={style.link} href="#">
             Расчитать стоимость <img src={arrow} className={style.icon} />
           </a>
-          <a className={style.link} href="#">
+          <a className={style.link__2} href="#">
             Личный кабинет
             <img src={person} className={style.icon} />
           </a>

@@ -1,3 +1,4 @@
+import About from '../../widjets/about/About'
 import Form from '../../widjets/form/Form'
 import Main from '../../widjets/main/Main'
 import Portfolio from '../../widjets/portfolio/Portfolio'
@@ -9,6 +10,7 @@ const Layout = () => {
     <div className="wrapper">
       <Main />
       <div className="container">
+        <About />
         <Responsibilities />
         <Services />
         <Portfolio />

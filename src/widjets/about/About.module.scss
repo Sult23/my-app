@@ -1,0 +1,22 @@
+.inner {
+  display: flex;
+  margin-bottom: 17px;
+  &__content {
+    margin-right: 24px;
+  }
+}
+.img {
+  margin-right: 18px;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  p {
+    font-size: 14px;
+  }
+}
+.title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 68px;
+  color: #e574bc;
+}
