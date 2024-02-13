@@ -1,0 +1,63 @@
+{
+  "main": {
+    "calculate": "izračunati trošak",
+    "cabinet": "Personal Area",
+    "text": "Stvaramo divna i impresivna digitalna avanturistička iskustva",
+    "about": "O nama",
+    "contacts": "Kontakti",
+    "team": "Tim",
+    "services": "Usluge",
+    "portfolio": "Portfolio"
+  },
+  "about": {
+    "title": "O nama",
+    "subtitle": "Više od 5 godina gradimo visokokvalitetan dizajn veb stranica i aplikacija",
+    "text1": "Zadovoljni klijenti",
+    "text2": "Uspešni projekti",
+    "text3": "Najbolji specijalisti",
+    "content": "Xeno Xetrum posluje na digitalnom tržištu od 2018. Počeli smo sa SEO promocijom veb stranica i kontekstualnim oglašavanjem, a danas razvijamo i implementiramo sveobuhvatna rešenja za internet marketing, uključujući digitalne strategije. Samo jak tim može da radi sa tako raznolikim temama i alatima i dosledno postiže rezultate. Osoblje agencije broji više od 700 zaposlenih, uključujući optimizatore, programere, stručnjake iz oblasti UKS, SMM i upravljanje reputacijom, kao i profesionalne urednike. Kancelarije Kseno Ksetrum nalaze se u Moskvi, Voronježu, Tuli i Tambovu."
+  },
+  "responses": {
+    "title": "Šta mi radimo",
+    "subtitle": "Pružamo čitav niz rešenja za vaše digitalno poslovanje po principu „ključ u ruke“.",
+    "strategy": "strategija",
+    "strategy_text": "Pomoći ćemo vam da napravite poslovni plan, razvijete strategiju razvoja proizvoda i pretvorite svoje ciljeve u stvarnost.",
+    "grow": "visina",
+    "grow_text": "Sprovešćemo istraživanje i analizu vašeg digitalnog proizvoda, ažuriramo vaše veb resurse i prilagodimo vašu marketinšku strategiju radi povećanja poslovne efikasnosti.",
+    "development": "Razvoj",
+    "development_text": "Razvićemo prodajne veb stranice ili efikasnu veb aplikaciju, pomoći u automatizaciji poslovnih procesa i integraciji sa drugim informacionim sistemima.",
+    "link": "Da saznate više"
+  },
+  "services": {
+    "title": "Usluge",
+    "subtitle": "Nudimo širok spektar usluga veb dizajna uključujući:",
+    "1block": "Razvoj veb stranica i mobilnih aplikacija",
+    "2block": "Optimizacija korisničkog interfejsa",
+    "3block": "Grafički dizajn i ilustracije",
+    "4block": "Administracija i podrška",
+    "link": "Izaberi",
+    "btn": "Prikaži sve usluge"
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "subtitle": "Radili smo sa brendovima kao što su:",
+    "box1": "Povećana je prodaja robe",
+    "box2": "Povećana konverzija u prodavnicama",
+    "box3": "Povećana svest o brendu",
+    "box4": "Klijenti su bili zadovoljni",
+    "text": "Rebrendirali smo dizajn tehnoloških kartica. Povećana svest o brendu.",
+    "btn": "Pogledajte slučaj u celosti",
+    "comment": "pregled",
+    "content": "Nedavno sam kupio kartice proizvoda od Demik-a i nadmašile su sva moja očekivanja! Izrada je na najvišem nivou, svaka karta je pažljivo i pregledno izvedena. Bili su dar od Boga za moj posao, olakšavajući proces organizovanja predmeta i poboljšavajući izgled. Zahvaljujući karticama iz Demik-a, mogao sam lako da upravljam svojim inventarom, poboljšam izveštavanje i povećam efikasnost rada. Jednostavni su za upotrebu i bogati funkcijama, što ih čini idealnim izborom za preduzetnike poput mene. Preporučujem Demik kartice proizvoda svima koji traže pouzdano, visokokvalitetno rešenje za unapređenje svog poslovanja!"
+  },
+  "form": {
+    "title": "Hajde da radimo zajedno",
+    "subtitle": "Hajde da napravimo plan i postignemo pravi efekat. Učinimo to velikim!",
+    "contacts": "Vaši kontakti",
+    "name": "Ime",
+    "company": "Kompanija",
+    "phone": "Broj telefona",
+    "mail": "Email",
+    "btn": "Pošalji"
+  }
+}

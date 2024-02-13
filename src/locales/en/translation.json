@@ -1,0 +1,63 @@
+{
+  "main": {
+    "calculate": "calculate price",
+    "cabinet": "Personal Area",
+    "text": "We create wonderful and immersive digital adventure experiences",
+    "about": "About us",
+    "contacts": "Contacts",
+    "team": "Team",
+    "services": "Services",
+    "portfolio": "Portfolio"
+  },
+  "about": {
+    "title": "About us",
+    "subtitle": "We have been building high-quality website and application design for more than 5 years",
+    "text1": "Satisfied clients",
+    "text2": "Successful projects",
+    "text3": "Best specialists",
+    "content": "Xeno Xetrum has been operating in the digital market since 2018. We started with SEO website promotion and contextual advertising, and today we develop and implement comprehensive Internet marketing solutions, including digital strategies. Only a strong team can work with such a variety of topics and tools and consistently achieve results. The agency's staff includes more than 700 employees, including optimizers, programmers, specialists in the field of UX, SMM and reputation management, and professional editors. Xeno Xetrum offices are located in Moscow, Voronezh, Tula and Tambov."
+  },
+  "responses": {
+    "title": "what are we doing",
+    "subtitle": "We provide a full range of solutions for your digital business on a turnkey basis",
+    "strategy": "strategy",
+    "strategy_text": "We will help you draw up a business plan, develop a product development strategy and turn your goals into reality.",
+    "grow": "grow",
+    "grow_text": "We will conduct research and analysis of your digital product, update your web resources and adjust your marketing strategy to increase business efficiency.",
+    "development": "Development",
+    "development_text": "We will develop selling websites or an effective web application, help automate business processes and integrate with other information systems.",
+    "link": "Learn more"
+  },
+  "services": {
+    "title": "Services",
+    "subtitle": "We offer a wide range of web design services including:",
+    "1block": "Website and mobile application development",
+    "2block": "User Interface Optimization",
+    "3block": "Graphic design and illustrations",
+    "4block": "Administration and support",
+    "link": "Choose",
+    "btn": "Show all services"
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "subtitle": "We have worked with brands such as:",
+    "box1": "Sales of goods increased",
+    "box2": "Increased conversion in stores",
+    "box3": "Increased brand awareness",
+    "box4": "Clients were satisfied",
+    "text": "We rebranded the design of technology cards. Increased brand awareness.",
+    "btn": "View the case in full",
+    "comment": "review",
+    "content": "I recently purchased product cards from Demix and they exceeded all my expectations! The workmanship is at the highest level, each card is carefully and clearly executed. They have been a godsend for my business, making the process of organizing items easier and improving the appearance. Thanks to cards from Demix, I was able to easily manage my inventory, improve reporting and increase work efficiency. They are easy to use and feature-rich, making them an ideal choice for entrepreneurs like me. I recommend Demix product cards to anyone looking for a reliable, high-quality solution to improve their business!"
+  },
+  "form": {
+    "title": "Let's work together",
+    "subtitle": "Let's develop a plan and achieve real effect. Let's make it big!",
+    "contacts": "Your contacts",
+    "name": "Name",
+    "company": "Company",
+    "phone": "Phone number",
+    "mail": "E-mail",
+    "btn": "Send"
+  }
+}
