@@ -46,7 +46,7 @@ const About = () => {
                 <p className={style.text}>{t('about.text3')}</p>
               </div>
             </div>
-            <img src={logo} />
+            <img src={logo} className={style.logo} />
           </div>
           {popupData.map((popup) => (
             <Popup key={popup.id} year={popup.year} text={popup.text} />

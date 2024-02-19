@@ -34,10 +34,10 @@ const Responsibilities = () => {
           <img src={`${box.img}`} className={style.img} />
           <h2 className={style.title}>{box.title}</h2>
           <p className={style.text}>{box.text}</p>
-          <a href="#" className={style.link}>
+          {/* <a href="#" className={style.link}>
             {t('responses.link')}
             <img src={arrow} className={style.icon} />
-          </a>
+          </a> */}
         </div>
       ))}
     </div>

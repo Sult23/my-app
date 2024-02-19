@@ -53,16 +53,15 @@ body {
   overflow-x: hidden;
   font-family: 'Raleway', sans-serif;
   font-weight: 500;
-  white-space: nowrap;
   color: #fff;
 }
 .wrapper {
-  max-width: 1300px;
+  max-width: 1460px;
   margin: 0 auto;
   padding: 0 10px;
 }
 .container {
-  max-width: 1240px;
+  max-width: 1390px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -76,4 +75,23 @@ body {
   color: #e574bc;
   font-size: 14px;
   margin-bottom: 35px;
+  text-align: right;
+}
+@media (max-width: 685px) {
+  .wrapper {
+    padding: 0;
+  }
+  .title {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 74px;
+    white-space: wrap;
+    margin-bottom: 20px;
+    margin-top: 120px;
+  }
+  .subtitle {
+    white-space: wrap;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
 }

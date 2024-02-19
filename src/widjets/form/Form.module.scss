@@ -5,6 +5,7 @@
   font-weight: 700;
   margin-bottom: 35px;
   margin-top: 89px;
+  white-space: wrap;
 }
 .inner {
   display: flex;
@@ -69,4 +70,21 @@
   box-shadow: 0px 4px 3px 1px rgba(255, 255, 255, 0.158);
   -webkit-box-shadow: 0px 12px 12px 0px rgba(255, 255, 255, 0.158);
   -moz-box-shadow: 0px 4px 3px 1px rgba(255, 255, 255, 0.158);
+}
+
+@media (max-width: 1178px) {
+  .inner {
+    margin-bottom: 40px;
+  }
+  .img {
+    display: none;
+  }
+  .form {
+    margin: 0 auto;
+  }
+  .title {
+    font-size: 64px;
+    line-height: 74px;
+    text-align: left;
+  }
 }

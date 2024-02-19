@@ -1,8 +1,13 @@
-import style from './Header.module.scss'
-import logo from '../../assets/img/icons/logo-icon.svg'
 import { useTranslation } from 'react-i18next'
+import { useState } from 'react'
+import clsx from 'clsx'
+import logo from '../../assets/img/icons/logo-icon.svg'
+import close from '../../assets/img/icons/close-icon.svg'
+import style from './Header.module.scss'
+
 const Header = () => {
   const { t } = useTranslation()
+  const [open, setOpen] = useState(false)
 
   return (
     <div className={style.header}>
@@ -12,7 +17,17 @@ const Header = () => {
             <img src={logo} className={style.logo__img} />
             Xeno Xetrum
           </a>
-          <ul className={style.nav}>
+          <ul
+            className={clsx({
+              [style.nav]: true,
+              [style.active]: open === true,
+            })}
+          >
+            <img
+              src={close}
+              className={style.close}
+              onClick={() => setOpen(false)}
+            />
             <a href="#">
               <li className={style.nav__item}>{t('main.about')}</li>
             </a>
@@ -29,6 +44,11 @@ const Header = () => {
               <li className={style.nav__item}>{t('main.portfolio')}</li>
             </a>
           </ul>
+          <div className={style.burger} onClick={() => setOpen(true)}>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
       </div>
     </div>

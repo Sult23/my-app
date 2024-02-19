@@ -17,14 +17,14 @@
     text-transform: uppercase;
   }
   .text {
-    font-size: 14px;
-    max-width: 510px;
+    font-size: 25px;
+    max-width: 722px;
     white-space: wrap;
-    margin-left: auto;
-    margin-right: 50px;
+    text-align: center;
+    margin: 0 auto;
     margin-bottom: 40px;
   }
-  .link {
+  /* .link {
     display: flex;
     align-items: center;
     margin: 0 auto;
@@ -41,6 +41,14 @@
     }
     .icon {
       margin-left: 8px;
+    }
+  } */
+}
+
+@media (max-width: 685px) {
+  .inner {
+    .text {
+      font-size: 16px;
     }
   }
 }

@@ -25,16 +25,18 @@ const Main = () => {
           <br />
           Xetrum
         </h1>
-        <div className={style.box}>
-          <a className={style.link} href="#">
-            {t('main.calculate')} <img src={arrow} className={style.icon} />
-          </a>
-          <a className={style.link__2} href="#">
-            {t('main.cabinet')}
-            <img src={person} className={style.icon} />
-          </a>
+        <div className={style.reverse}>
+          <div className={style.box}>
+            <a className={style.link} href="#">
+              {t('main.calculate')} <img src={arrow} className={style.icon} />
+            </a>
+            <a className={style.link__2} href="#">
+              {t('main.cabinet')}
+              <img src={person} className={style.icon} />
+            </a>
+          </div>
+          <p className={style.text}>{t('main.text')}</p>
         </div>
-        <p className={style.text}>{t('main.text')}</p>
       </div>
     </div>
   )

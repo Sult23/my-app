@@ -1,5 +1,6 @@
 .inner {
   display: flex;
+  justify-content: space-between;
   margin-bottom: 17px;
   &__content {
     margin-right: 24px;
@@ -11,6 +12,8 @@
 .box {
   display: flex;
   flex-direction: column;
+  max-width: 900px;
+  width: 100%;
   p {
     font-size: 14px;
   }
