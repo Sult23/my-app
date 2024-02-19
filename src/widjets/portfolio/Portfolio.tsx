@@ -21,6 +21,7 @@ const Portfolio = () => {
       <div className={style.slider}>
         <div className={style.inner}>
           <img src={demix} className={style.img} />
+          <p className={style.adaptive__text}>{t('portfolio.text')}</p>
           <div className={style.inner__content}>
             {portfolioData.map((el) => (
               <div key={el.text}>
