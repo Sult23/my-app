@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/my-app/static/css/main.a1bbf4ea.css",
-    "main.js": "/my-app/static/js/main.b48c0465.js",
+    "main.js": "/my-app/static/js/main.4b9543d4.js",
     "static/js/592.7f72a991.chunk.js": "/my-app/static/js/592.7f72a991.chunk.js",
     "static/media/header-bg.png": "/my-app/static/media/header-bg.43e0191cfe72128384bf.png",
-    "static/media/header-img.png": "/my-app/static/media/header-img.3f0a38d6b7af70693c0b.png",
+    "static/media/header-img.png": "/my-app/static/media/header-img.476689c03dfb3f9900fc.png",
     "static/media/form-bg.png": "/my-app/static/media/form-bg.3b894386faa55eade443.png",
     "static/media/about-bg.png": "/my-app/static/media/about-bg.144c015d6741e432c94d.png",
     "static/media/grow-bg.png": "/my-app/static/media/grow-bg.118a07970467d0e06ebc.png",
@@ -26,11 +26,11 @@
     "static/media/arrow-right-black.svg": "/my-app/static/media/arrow-right-black.d413d72fddde91fd7e8d0b1ab3e2275f.svg",
     "static/media/arrow-right.svg": "/my-app/static/media/arrow-right.938e591b06fc62facb834c3561472735.svg",
     "main.a1bbf4ea.css.map": "/my-app/static/css/main.a1bbf4ea.css.map",
-    "main.b48c0465.js.map": "/my-app/static/js/main.b48c0465.js.map",
+    "main.4b9543d4.js.map": "/my-app/static/js/main.4b9543d4.js.map",
     "592.7f72a991.chunk.js.map": "/my-app/static/js/592.7f72a991.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a1bbf4ea.css",
-    "static/js/main.b48c0465.js"
+    "static/js/main.4b9543d4.js"
   ]
 }
