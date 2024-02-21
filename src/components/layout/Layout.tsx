@@ -8,18 +8,22 @@ import style from './Layout.module.scss'
 
 const Layout = () => {
   return (
-    <div className="wrapper">
+    <>
       <div className={style.bg}>
-        <Main />
+        <div className="wrapper">
+          <Main />
+        </div>
       </div>
-      <div className="container">
-        <About />
-        <Responsibilities />
-        <Services />
-        <Portfolio />
-        <Form />
+      <div className="wrapper">
+        <div className="container">
+          <About />
+          <Responsibilities />
+          <Services />
+          <Portfolio />
+          <Form />
+        </div>
       </div>
-    </div>
+    </>
   )
 }
 
