@@ -1,5 +1,5 @@
 .about__block {
-  animation: 4s show ease;
+  animation: 3s show ease;
 }
 @keyframes show {
   from {
@@ -53,6 +53,9 @@
 }
 
 @media (max-width: 1320px) {
+  .about__block {
+    min-height: 120vh;
+  }
   .img {
     display: none;
   }
@@ -76,9 +79,6 @@
 }
 
 @media (max-width: 685px) {
-  .about__block {
-    min-height: 130vh;
-  }
   .title {
     font-size: 48px;
   }

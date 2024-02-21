@@ -5,15 +5,16 @@ import reportWebVitals from './reportWebVitals'
 import './index.scss'
 import './i18n'
 import { ScrollProvider } from './utils/ScrollContext'
+import Loader from './components/loader/Loader'
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 root.render(
   <React.StrictMode>
-    <Suspense fallback={<div>Loading...</div>}>
-      <ScrollProvider>
+    <ScrollProvider>
+      <Suspense fallback={<Loader />}>
         <App />
-      </ScrollProvider>
-    </Suspense>
+      </Suspense>
+    </ScrollProvider>
   </React.StrictMode>
 )
 reportWebVitals()

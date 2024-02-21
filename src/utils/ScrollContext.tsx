@@ -25,8 +25,6 @@ export const ScrollProvider: React.FC<{ children: ReactNode }> = ({
     return () => window.removeEventListener('scroll', onScroll)
   }, [onScroll])
 
-  console.log(scroll)
-
   return (
     <ScrollContext.Provider value={{ scroll, setScroll }}>
       {children}

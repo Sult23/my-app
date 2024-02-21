@@ -30,7 +30,7 @@ const About = () => {
 
   return (
     <>
-      {scroll <= 100 ? null : (
+      {scroll <= 90 ? null : (
         <div className={style.about__block}>
           <h1 className="title">{t('about.title')}</h1>
           <h4 className="subtitle">{t('about.subtitle')}</h4>
