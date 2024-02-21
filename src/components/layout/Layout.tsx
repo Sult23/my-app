@@ -4,11 +4,14 @@ import Main from '../../widjets/main/Main'
 import Portfolio from '../../widjets/portfolio/Portfolio'
 import Responsibilities from '../../widjets/responsibilities/Responsibilities'
 import Services from '../../widjets/services/Services'
+import style from './Layout.module.scss'
 
 const Layout = () => {
   return (
     <div className="wrapper">
-      <Main />
+      <div className={style.bg}>
+        <Main />
+      </div>
       <div className="container">
         <About />
         <Responsibilities />

@@ -1,9 +1,11 @@
 import { useTranslation } from 'react-i18next'
 import arrow from '../../assets/img/icons/arrow-right.svg'
 import style from './Services.module.scss'
+import { useScroll } from '../../utils/ScrollContext'
 
 const Services = () => {
   const { t } = useTranslation()
+  const { scroll } = useScroll()
   const servicesData = [
     {
       number: '01',
@@ -28,26 +30,30 @@ const Services = () => {
   ]
 
   return (
-    <div>
-      <h1 className="title">{t('services.title')}</h1>
-      <h4 className="subtitle">{t('services.subtitle')}</h4>
-      <div className={style.inner}>
-        {servicesData.map((service) => (
-          <div className={style.box} key={service.title}>
-            <h4 className={style.title}>{service.number}</h4>
-            <p className={style.text}>{service.title}</p>
-            <a href={service.link} className={style.link}>
-              {t('services.link')}
-              <img src={arrow} className={style.icon} />
-            </a>
+    <>
+      {scroll < 2350 ? null : (
+        <div className={style.services}>
+          <h1 className="title">{t('services.title')}</h1>
+          <h4 className="subtitle">{t('services.subtitle')}</h4>
+          <div className={style.inner}>
+            {servicesData.map((service) => (
+              <div className={style.box} key={service.title}>
+                <h4 className={style.title}>{service.number}</h4>
+                <p className={style.text}>{service.title}</p>
+                <a href={service.link} className={style.link}>
+                  {t('services.link')}
+                  <img src={arrow} className={style.icon} />
+                </a>
+              </div>
+            ))}
           </div>
-        ))}
-      </div>
-      <a href="#" className={style.link}>
-        {t('services.btn')}
-        <img src={arrow} className={style.icon} />
-      </a>
-    </div>
+          <a href="#" className={style.link}>
+            {t('services.btn')}
+            <img src={arrow} className={style.icon} />
+          </a>
+        </div>
+      )}
+    </>
   )
 }
 

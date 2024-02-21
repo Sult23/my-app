@@ -4,8 +4,10 @@ import grow from '../../assets/img/grow-bg.png'
 import development from '../../assets/img/development-bg.png'
 import arrow from '../../assets/img/icons/arrow-right.svg'
 import { useTranslation } from 'react-i18next'
+import { useScroll } from '../../utils/ScrollContext'
 
 const Responsibilities = () => {
+  const { scroll } = useScroll()
   const { t } = useTranslation()
   const boxData = [
     {
@@ -26,21 +28,21 @@ const Responsibilities = () => {
   ]
 
   return (
-    <div>
-      <h1 className="title">{t('responses.title')}</h1>
-      <h4 className="subtitle">{t('responses.subtitle')}</h4>
-      {boxData.map((box) => (
-        <div className={style.inner} key={box.title}>
-          <img src={`${box.img}`} className={style.img} />
-          <h2 className={style.title}>{box.title}</h2>
-          <p className={style.text}>{box.text}</p>
-          {/* <a href="#" className={style.link}>
-            {t('responses.link')}
-            <img src={arrow} className={style.icon} />
-          </a> */}
+    <>
+      {scroll <= 1160 ? null : (
+        <div className={style.resp}>
+          <h1 className="title">{t('responses.title')}</h1>
+          <h4 className="subtitle">{t('responses.subtitle')}</h4>
+          {boxData.map((box) => (
+            <div className={style.inner} key={box.title}>
+              <img src={`${box.img}`} className={style.img} />
+              <h2 className={style.title}>{box.title}</h2>
+              <p className={style.text}>{box.text}</p>
+            </div>
+          ))}
         </div>
-      ))}
-    </div>
+      )}
+    </>
   )
 }
 

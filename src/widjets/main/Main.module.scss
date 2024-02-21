@@ -1,9 +1,5 @@
 .inner {
   min-height: 100vh;
-  background: url('../../assets/img/header-bg.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   position: relative;
 }
 .content {
@@ -112,6 +108,7 @@
 
 @media (max-width: 685px) {
   .inner {
+    min-height: 120vh;
     padding: 0 10px;
   }
   .content {

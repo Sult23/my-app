@@ -5,9 +5,11 @@ import reserve from '../../assets/img/about-reserve.png'
 import logo_reserve from '../../assets/img/about-logo-reserve.png'
 import Popup from '../../components/popup/Popup'
 import { useTranslation } from 'react-i18next'
+import { useScroll } from '../../utils/ScrollContext'
 
 const About = () => {
   const { t } = useTranslation()
+  const { scroll } = useScroll()
   const popupData = [
     {
       id: 1,
@@ -27,39 +29,43 @@ const About = () => {
   ]
 
   return (
-    <div>
-      <h1 className="title">{t('about.title')}</h1>
-      <h4 className="subtitle">{t('about.subtitle')}</h4>
-      <div className={style.inner}>
-        <img src={bg} className={style.img} />
-        <div className={style.box}>
-          <div className={style.about}>
-            <div className={style.inner__content}>
-              <div className={style.box}>
-                <h2 className={style.title}>60+</h2>
-                <p className={style.text}>{t('about.text1')}</p>
+    <>
+      {scroll <= 100 ? null : (
+        <div className={style.about__block}>
+          <h1 className="title">{t('about.title')}</h1>
+          <h4 className="subtitle">{t('about.subtitle')}</h4>
+          <div className={style.inner}>
+            <img src={bg} className={style.img} />
+            <div className={style.box}>
+              <div className={style.about}>
+                <div className={style.inner__content}>
+                  <div className={style.box}>
+                    <h2 className={style.title}>60+</h2>
+                    <p className={style.text}>{t('about.text1')}</p>
+                  </div>
+                  <div className={style.box}>
+                    <h2 className={style.title}>90+</h2>
+                    <p className={style.text}>{t('about.text2')}</p>
+                  </div>
+                  <div className={style.box}>
+                    <h2 className={style.title}>12</h2>
+                    <p className={style.text}>{t('about.text3')}</p>
+                  </div>
+                </div>
+                <img src={logo} className={style.logo} />
+                <div className={style.adaptive}>
+                  <img src={reserve} />
+                  <img src={logo_reserve} className={style.adaptive__logo} />
+                </div>
               </div>
-              <div className={style.box}>
-                <h2 className={style.title}>90+</h2>
-                <p className={style.text}>{t('about.text2')}</p>
-              </div>
-              <div className={style.box}>
-                <h2 className={style.title}>12</h2>
-                <p className={style.text}>{t('about.text3')}</p>
-              </div>
-            </div>
-            <img src={logo} className={style.logo} />
-            <div className={style.adaptive}>
-              <img src={reserve} />
-              <img src={logo_reserve} className={style.adaptive__logo} />
+              {popupData.map((popup) => (
+                <Popup key={popup.id} year={popup.year} text={popup.text} />
+              ))}
             </div>
           </div>
-          {popupData.map((popup) => (
-            <Popup key={popup.id} year={popup.year} text={popup.text} />
-          ))}
         </div>
-      </div>
-    </div>
+      )}
+    </>
   )
 }
 
