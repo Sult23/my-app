@@ -7,7 +7,7 @@ import { useTranslation } from 'react-i18next'
 import { useScroll } from '../../utils/ScrollContext'
 
 const Responsibilities = () => {
-  const { scroll } = useScroll()
+  const { scroll, isVisible } = useScroll()
   const { t } = useTranslation()
   const boxData = [
     {

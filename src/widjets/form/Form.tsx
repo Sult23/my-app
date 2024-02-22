@@ -10,7 +10,7 @@ import { useScroll } from '../../utils/ScrollContext'
 
 const Form = () => {
   const { t } = useTranslation()
-  const { scroll } = useScroll()
+  const { scroll, isVisible } = useScroll()
   return (
     <>
       {scroll <= 4500 ? null : (

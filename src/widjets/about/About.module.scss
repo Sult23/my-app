@@ -1,4 +1,7 @@
-.about__block {
+.inner {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 17px;
   animation: 3s show ease;
 }
 @keyframes show {
@@ -8,11 +11,6 @@
   to {
     opacity: 1;
   }
-}
-.inner {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 17px;
 }
 .about {
   display: flex;

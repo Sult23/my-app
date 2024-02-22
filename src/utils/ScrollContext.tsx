@@ -10,6 +10,7 @@ import React, {
 interface ScrollContextProps {
   scroll: number
   setScroll: React.Dispatch<React.SetStateAction<number>>
+  isVisible: boolean
 }
 
 const ScrollContext = createContext<ScrollContextProps | undefined>(undefined)
@@ -17,8 +18,19 @@ const ScrollContext = createContext<ScrollContextProps | undefined>(undefined)
 export const ScrollProvider: React.FC<{ children: ReactNode }> = ({
   children,
 }) => {
+  const [isVisible, setIsVisible] = useState(true)
   const [scroll, setScroll] = useState<number>(0)
-  const onScroll = useCallback(() => setScroll(Math.round(window.scrollY)), [])
+  const onScroll = useCallback(() => {
+    const currentScroll = Math.round(window.scrollY)
+    setScroll(currentScroll)
+    if (currentScroll > scroll) {
+      // Скролл вниз
+      setIsVisible(false)
+    } else {
+      // Скролл вверх
+      setIsVisible(true)
+    }
+  }, [scroll])
   useEffect(() => {
     onScroll()
     window.addEventListener('scroll', onScroll)
@@ -26,7 +38,7 @@ export const ScrollProvider: React.FC<{ children: ReactNode }> = ({
   }, [onScroll])
 
   return (
-    <ScrollContext.Provider value={{ scroll, setScroll }}>
+    <ScrollContext.Provider value={{ scroll, setScroll, isVisible }}>
       {children}
     </ScrollContext.Provider>
   )

@@ -5,7 +5,7 @@ import { useScroll } from '../../utils/ScrollContext'
 
 const Services = () => {
   const { t } = useTranslation()
-  const { scroll } = useScroll()
+  const { scroll, isVisible } = useScroll()
   const servicesData = [
     {
       number: '01',
@@ -31,10 +31,10 @@ const Services = () => {
 
   return (
     <>
-      {scroll < 2350 ? null : (
-        <div className={style.services}>
-          <h1 className="title">{t('services.title')}</h1>
-          <h4 className="subtitle">{t('services.subtitle')}</h4>
+      <div className={style.services}>
+        <h1 className="title">{t('services.title')}</h1>
+        <h4 className="subtitle">{t('services.subtitle')}</h4>
+        {scroll < 2350 ? null : (
           <div className={style.inner}>
             {servicesData.map((service) => (
               <div className={style.box} key={service.title}>
@@ -47,12 +47,12 @@ const Services = () => {
               </div>
             ))}
           </div>
-          <a href="#" className={style.link}>
-            {t('services.btn')}
-            <img src={arrow} className={style.icon} />
-          </a>
-        </div>
-      )}
+        )}
+        <a href="#" className={style.link}>
+          {t('services.btn')}
+          <img src={arrow} className={style.icon} />
+        </a>
+      </div>
     </>
   )
 }

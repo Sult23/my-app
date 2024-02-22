@@ -9,7 +9,7 @@ import { useScroll } from '../../utils/ScrollContext'
 
 const About = () => {
   const { t } = useTranslation()
-  const { scroll } = useScroll()
+  const { scroll, isVisible } = useScroll()
   const popupData = [
     {
       id: 1,
@@ -30,10 +30,10 @@ const About = () => {
 
   return (
     <>
-      {scroll <= 90 ? null : (
-        <div className={style.about__block}>
-          <h1 className="title">{t('about.title')}</h1>
-          <h4 className="subtitle">{t('about.subtitle')}</h4>
+      <div className={style.about__block}>
+        <h1 className="title">{t('about.title')}</h1>
+        <h4 className="subtitle">{t('about.subtitle')}</h4>
+        {scroll <= 240 ? null : (
           <div className={style.inner}>
             <img src={bg} className={style.img} />
             <div className={style.box}>
@@ -63,8 +63,8 @@ const About = () => {
               ))}
             </div>
           </div>
-        </div>
-      )}
+        )}
+      </div>
     </>
   )
 }
