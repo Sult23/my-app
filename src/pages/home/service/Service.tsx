@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next'
-import arrow from '../../assets/img/icons/arrow-right.svg'
-import style from './Services.module.scss'
-import { useScroll } from '../../utils/ScrollContext'
+import arrow from '../../../assets/img/icons/arrow-right.svg'
+import style from './Service.module.scss'
+import { useScroll } from '../../../utils/ScrollContext'
 
 const Services = () => {
   const { t } = useTranslation()

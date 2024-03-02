@@ -1,9 +1,10 @@
 import { useTranslation } from 'react-i18next'
 import { useState } from 'react'
 import clsx from 'clsx'
-import logo from '../../assets/img/icons/logo-icon.svg'
-import close from '../../assets/img/icons/close-icon.svg'
+import logo from '../../../assets/img/icons/logo-icon.svg'
+import close from '../../../assets/img/icons/close-icon.svg'
 import style from './Header.module.scss'
+import { Link } from 'react-router-dom'
 
 const Header = () => {
   const { t } = useTranslation()
@@ -13,10 +14,10 @@ const Header = () => {
     <div className={style.header}>
       <div className={style.inner}>
         <div className={style.box}>
-          <a className={style.logo}>
+          <Link to="/" className={style.logo}>
             <img src={logo} className={style.logo__img} />
             Xeno Xetrum
-          </a>
+          </Link>
           <ul
             className={clsx({
               [style.nav]: true,
@@ -28,21 +29,21 @@ const Header = () => {
               className={style.close}
               onClick={() => setOpen(false)}
             />
-            <a href="#">
+            <Link to="#">
               <li className={style.nav__item}>{t('main.about')}</li>
-            </a>
-            <a href="#">
+            </Link>
+            <Link to="#">
               <li className={style.nav__item}>{t('main.contacts')}</li>
-            </a>
-            <a href="#">
+            </Link>
+            <Link to="#">
               <li className={style.nav__item}>{t('main.team')}</li>
-            </a>
-            <a href="#">
+            </Link>
+            <Link to="/services">
               <li className={style.nav__item}>{t('main.services')}</li>
-            </a>
-            <a href="#">
+            </Link>
+            <Link to="#">
               <li className={style.nav__item}>{t('main.portfolio')}</li>
-            </a>
+            </Link>
           </ul>
           <div className={style.burger} onClick={() => setOpen(true)}>
             <span></span>

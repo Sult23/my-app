@@ -1,0 +1,18 @@
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  font-family: 'roboto', sans-serif;
+  font-weight: 700;
+  color: #ffffff75;
+}
+.dot {
+  margin: 0 10px;
+}
+.active {
+  color: #fff;
+}
+@media (max-width: 950px) {
+  .breadcrumbs {
+    display: none;
+  }
+}

@@ -1,11 +1,11 @@
-import vectorLeft from '../../assets/img/icons/vector-left.svg'
-import vectorRight from '../../assets/img/icons/vector-right.svg'
+import vectorLeft from '../../../assets/img/icons/vector-left.svg'
+import vectorRight from '../../../assets/img/icons/vector-right.svg'
 import { useTranslation } from 'react-i18next'
-import { useScroll } from '../../utils/ScrollContext'
+import { useScroll } from '../../../utils/ScrollContext'
 import style from './Portfolio.module.scss'
 import { FC, useState } from 'react'
 import clsx from 'clsx'
-import Sliders from '../../components/slider/Slider'
+import Sliders from '../../../components/slider/Slider'
 
 const Portfolio: FC = () => {
   const { t } = useTranslation()

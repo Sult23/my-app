@@ -1,12 +1,12 @@
 import style from './Form.module.scss'
-import bg from '../../assets/img/form-bg.png'
-import person from '../../assets/img/icons/form-person.svg'
-import bag from '../../assets/img/icons/form-bag.svg'
-import phone from '../../assets/img/icons/form-phone.svg'
-import mail from '../../assets/img/icons/form-mail.svg'
-import arrow from '../../assets/img/icons/arrow-right.svg'
+import bg from '../../../assets/img/form-bg.png'
+import person from '../../../assets/img/icons/form-person.svg'
+import bag from '../../../assets/img/icons/form-bag.svg'
+import phone from '../../../assets/img/icons/form-phone.svg'
+import mail from '../../../assets/img/icons/form-mail.svg'
+import arrow from '../../../assets/img/icons/arrow-right.svg'
 import { useTranslation } from 'react-i18next'
-import { useScroll } from '../../utils/ScrollContext'
+import { useScroll } from '../../../utils/ScrollContext'
 
 const Form = () => {
   const { t } = useTranslation()

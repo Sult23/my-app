@@ -1,11 +1,11 @@
 import style from './About.module.scss'
-import bg from '../../assets/img/about-bg.png'
-import logo from '../../assets/img/about-logo.png'
-import reserve from '../../assets/img/about-reserve.png'
-import logo_reserve from '../../assets/img/about-logo-reserve.png'
-import Popup from '../../components/popup/Popup'
+import bg from '../../../assets/img/about-bg.png'
+import logo from '../../../assets/img/about-logo.png'
+import reserve from '../../../assets/img/about-reserve.png'
+import logo_reserve from '../../../assets/img/about-logo-reserve.png'
+import Popup from '../../../components/popup/Popup'
 import { useTranslation } from 'react-i18next'
-import { useScroll } from '../../utils/ScrollContext'
+import { useScroll } from '../../../utils/ScrollContext'
 
 const About = () => {
   const { t } = useTranslation()

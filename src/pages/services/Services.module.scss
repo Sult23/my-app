@@ -1,0 +1,20 @@
+.bg {
+  background: url('../../assets/img/header-bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+.title {
+  font-size: 95px;
+  font-family: 'roboto', sans-serif;
+  font-weight: 700;
+  color: #e574bc;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 440px) {
+  .title {
+    font-size: 56px;
+  }
+}

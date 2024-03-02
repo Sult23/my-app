@@ -1,9 +1,9 @@
-import Header from '../../components/header/Header'
+import Header from '../header/Header'
 import style from './Main.module.scss'
-import arrow from '../../assets/img/icons/arrow-right-black.svg'
-import figure from '../../assets/img/header-img.png'
-import person from '../../assets/img/icons/person-icon.svg'
-import LocaleSwitcher from '../../components/ui/localeSwitcher/LocaleSwitcher'
+import arrow from '../../../assets/img/icons/arrow-right-black.svg'
+import figure from '../../../assets/img/header-img.png'
+import person from '../../../assets/img/icons/person-icon.svg'
+import LocaleSwitcher from '../../../components/ui/localeSwitcher/LocaleSwitcher'
 import { useTranslation } from 'react-i18next'
 
 const Main = () => {

@@ -1,10 +1,9 @@
 import style from './Responsibilities.module.scss'
-import strategy from '../../assets/img/strategy-bg.png'
-import grow from '../../assets/img/grow-bg.png'
-import development from '../../assets/img/development-bg.png'
-import arrow from '../../assets/img/icons/arrow-right.svg'
+import strategy from '../../../assets/img/strategy-bg.png'
+import grow from '../../../assets/img/grow-bg.png'
+import development from '../../../assets/img/development-bg.png'
 import { useTranslation } from 'react-i18next'
-import { useScroll } from '../../utils/ScrollContext'
+import { useScroll } from '../../../utils/ScrollContext'
 
 const Responsibilities = () => {
   const { scroll, isVisible } = useScroll()
