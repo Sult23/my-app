@@ -58,9 +58,11 @@ const About = () => {
                   <img src={logo_reserve} className={style.adaptive__logo} />
                 </div>
               </div>
-              {popupData.map((popup) => (
-                <Popup key={popup.id} year={popup.year} text={popup.text} />
-              ))}
+              <div className={style.popup}>
+                {popupData.map((popup) => (
+                  <Popup key={popup.id} year={popup.year} text={popup.text} />
+                ))}
+              </div>
             </div>
           </div>
         )}
