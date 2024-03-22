@@ -1,7 +1,6 @@
-import { useCallback, useEffect, useState } from 'react'
-import Layout from './components/layout/Layout'
+import { useEffect, useState } from 'react'
 import Loader from './components/loader/Loader'
-import { Route, Routes } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Home from './pages/home/Home'
 import Services from './pages/services/Services'
 
@@ -14,14 +13,12 @@ function App() {
     return <Loader />
   }
   return (
-    <div className="App">
-      <Layout>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/services" element={<Services />} />
-        </Routes>
-      </Layout>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="*" element={<Home />} />
+        <Route path="/services" element={<Services />} />
+      </Routes>
+    </Router>
   )
 }
 

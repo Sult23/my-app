@@ -28,27 +28,27 @@ const Header = () => {
             onClick={() => setIsOpen(false)}
           />
           <li className={style.nav__item}>
-            <Link className={style.nav__link} to="">
+            <Link className={style.nav__link} to="#">
               О нас
             </Link>
           </li>
           <li className={style.nav__item}>
-            <Link className={style.nav__link} to="">
+            <Link className={style.nav__link} to="#">
               Контакты
             </Link>
           </li>
           <li className={style.nav__item}>
-            <Link className={style.nav__link} to="">
+            <Link className={style.nav__link} to="#">
               Команда
             </Link>
           </li>
           <li className={style.nav__item}>
-            <Link className={style.nav__link} to="">
+            <Link className={style.nav__link} to="#">
               Услуги
             </Link>
           </li>
           <li className={style.nav__item}>
-            <Link className={style.nav__link} to="">
+            <Link className={style.nav__link} to="#">
               Портфолио
             </Link>
           </li>
